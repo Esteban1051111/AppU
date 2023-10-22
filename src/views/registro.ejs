@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <style>
+        #banner {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        #contenido {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 130px);
+        }
+
+        .boton {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: center;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        #pie {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="banner">
+        <!-- Aquí va el logo o imagen del banner -->
+    </div>
+
+    <div id="contenido">
+        <form action="">
+            <h2>¡Correo electrónico a sido verificado satisfactoriamente!</h2>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" required>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" name="apellido" id="apellido" required><br>
+
+
+            <label for="numero_identificacion">Número de identificación:</label>
+            <input type="text" name="numero_identificacion" id="numero_identificacion" required>
+
+            <label for="documento">Documento:</label>
+            <input type="text" name="documento" id="documento" required><br>
+
+            <label for="direccion">Dirección:</label>
+            <input type="text" name="direccion" id="direccion" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="text" name="telefono" id="telefono" required><br>
+
+            <label for="correo">Correo:</label>
+            <input type="text" name="correo" id="correo" required>
+
+            <label for="usuario">Usuario:</label>
+            <input type="text" name="usuario" id="usuario" required>
+
+            <label for="contraseña">Contraseña:</label>
+            <input type="password" name="contraseña" id="contraseña" required>
+
+            <label for="rol">Rol:</label>
+            <select name="rol" id="rol" required>
+                <option value="estudiante">Estudiante</option>
+                <option value="profesor">Profesor</option>
+            </select><br>
+
+            <button type="submit" class="boton">Completar Registro</button>
+        </form>
+    </div>
+
+    <div id="pie">
+        <!-- Aquí va el texto o información del pie de página -->
+    </div>
+</body>
+</html>

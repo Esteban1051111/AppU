@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .banner {
+            background-color: #f8f9fa;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .login-form {
+            background-color: #ffffff;
+            padding: 50px;
+            width: 100%;
+            max-width: 400px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .login-form input {
+            margin-bottom: 20px;
+            padding: 10px;
+            width: 100%;
+            border: 1px solid #ddd;
+        }
+
+        .login-form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .login-form button:hover {
+            background-color: #45a049;
+        }
+
+        .footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <!-- Aquí va el logo o imagen del banner -->
+    </div>
+
+    <div class="login-form">
+        <h2>Ingreso</h2>
+        <input type="text" id="username" name="username" placeholder="Usuario" required>
+        <input type="password" id="password" name="password" placeholder="Contraseña" required>
+        <button type="submit">Enviar</button>
+        <p><a href="/rcontrasena">Olvidó su contraseña?</a></p>
+    </div>
+
+    <div class="footer">
+        <!-- Aquí va el pie de página -->
+    </div>
+</body>
+</html>
