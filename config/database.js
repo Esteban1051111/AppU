@@ -7,3 +7,4 @@ password: 'admin'
 });// will use psql environment variables
 
 export default sql;
+

@@ -65,10 +65,16 @@
 
     <div class="login-form">
         <h2>Ingreso</h2>
-        <input type="text" id="username" name="username" placeholder="Usuario" required>
-        <input type="password" id="password" name="password" placeholder="Contraseña" required>
-        <button type="submit">Enviar</button>
+        <form name="sentMessage" id="loginForm" novalidate="novalidate" action="/usuarios/login" method="POST">
+           
+            <input type="text" class="form-control p-4" id="username"  name="username" placeholder="Usuario" required="required" data-validation-required-message="Por favor ingresar usuario" />
+            <p class="help-block text-danger"></p>
+            
+            <input type="text" class="form-control p-4" id="password"  name="password" placeholder="Contraseña" required="required" data-validation-required-message="Por favor ingresar contraseña" />
+            <p class="help-block text-danger"></p>
+            <button type="submit" class="boton">Enviar</button>
         <p><a href="/rcontrasena">Olvidó su contraseña?</a></p>
+        </form>
     </div>
 
     <div class="footer">

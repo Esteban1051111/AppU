@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Correo Electrónico</title>
+    <script src="js/validarCorreo.js"></script>
     <style>
         #banner {
             background-color: #4CAF50;
@@ -18,7 +19,7 @@
             align-items: center;
             height: calc(100vh - 130px);
         }
-
+    
         .boton {
             background-color: #4CAF50;
             border: none;
@@ -31,7 +32,7 @@
             margin: 4px 2px;
             cursor: pointer;
         }
-
+    
         #pie {
             background-color: #4CAF50;
             color: white;
@@ -49,11 +50,11 @@
         <form action="">
              <h2>Validar Correo Electrónico</h2>
             <input type="text" name="correo_institucional" id="correo_institucional" placeholder="Correo electrónico institucional" required><br>
-            <a href="/registro" class="boton">Enviar</a>
+            <a class="boton" onclick="validarCorreo()">Enviar</a>
             
         </form>
     </div>
-
+    
     <div id="pie">
         <!-- Aquí va el texto o información del pie de página -->
     </div>

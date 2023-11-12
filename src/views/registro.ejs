@@ -45,47 +45,72 @@
         <!-- Aquí va el logo o imagen del banner -->
     </div>
 
-    <div id="contenido">
-        <form action="">
-            <h2>¡Correo electrónico a sido verificado satisfactoriamente!</h2>
-            <label for="nombre">Nombre:</label>
-            <input type="text" name="nombre" id="nombre" required>
 
-            <label for="apellido">Apellido:</label>
-            <input type="text" name="apellido" id="apellido" required><br>
+    <div class="container-fluid pt-5">
+        <div class="d-flex flex-column text-center mb-5 pt-5">
+              <h4 class="text-secondary mb-3">Regístro Usuario</h4>
+            <h2 class="display-4 m-0">Ingresa <span class="text-primary"> datos solicitados</span></h2>
+            <h3>¡Correo electrónico a sido verificado satisfactoriamente!</h3>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-8 mb-5">
+                <div class="contact-form">
+                    <div id="success"></div>
+                    <form name="sentMessage" id="contactForm" novalidate="novalidate" action="/usuarios/crear" method="POST">
+
+                        <div class="control-group">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" class="form-control p-4" id="nombre"  name="nombre" placeholder="Nombre" required="required" data-validation-required-message="Por favor ingresar nombre" />
+                            <p class="help-block text-danger"></p>
+
+                            <label for="nombre">Documento:</label>
+                            <input type="text" class="form-control p-4" id="documento"  name="documento" placeholder="Documento" required="required" data-validation-required-message="Por favor ingresar documento" />
+                            <p class="help-block text-danger"></p>
+
+                            <label for="nombre">Dirección:</label>
+                            <input type="text" class="form-control p-4" id="direccion"  name="direccion" placeholder="Dirección" required="required" data-validation-required-message="Por favor ingresar dirección" />
+                            <p class="help-block text-danger"></p>
 
 
-            <label for="numero_identificacion">Número de identificación:</label>
-            <input type="text" name="numero_identificacion" id="numero_identificacion" required>
+                            <label for="nombre">Teléfono:</label>
+                            <input type="text" class="form-control p-4" id="telefono"  name="telefono" placeholder="Teléfono" required="required" data-validation-required-message="Por favor ingresaar teléfono" />
+                            <p class="help-block text-danger"></p>
 
-            <label for="documento">Documento:</label>
-            <input type="text" name="documento" id="documento" required><br>
+                            
+                            <label for="nombre">Correo:</label>
+                            <input type="text" class="form-control p-4" id="correo"  name="correo" placeholder="Correo" required="required" data-validation-required-message="Por favor ingresar correoelectrónico" />
+                            <p class="help-block text-danger"></p>
 
-            <label for="direccion">Dirección:</label>
-            <input type="text" name="direccion" id="direccion" required>
+                            
+                            <label for="nombre">Usuario</label>
+                            <input type="text" class="form-control p-4" id="usuario"  name="usuario" placeholder="Usuario" required="required" data-validation-required-message="Por favor ingresar usuario" />
+                            <p class="help-block text-danger"></p>
 
-            <label for="telefono">Teléfono:</label>
-            <input type="text" name="telefono" id="telefono" required><br>
+                            
+                            <label for="nombre">Contraseña:</label>
+                            <input type="text" class="form-control p-4" id="contrasena"  name="contrasena" placeholder="Contraseña" required="required" data-validation-required-message="Por favor ingresar contraseña" />
+                            <p class="help-block text-danger"></p>
 
-            <label for="correo">Correo:</label>
-            <input type="text" name="correo" id="correo" required>
-
-            <label for="usuario">Usuario:</label>
-            <input type="text" name="usuario" id="usuario" required>
-
-            <label for="contraseña">Contraseña:</label>
-            <input type="password" name="contraseña" id="contraseña" required>
-
+                            
+                            <label for="nombre">Confirmar Contraseña:</label>
+                            <input type="password" class="form-control p-4" id="confirm_contrasena" name="confirm_contrasena" placeholder="Confirmar Contraseña" required="required" data-validation-required-message="Por favor confirmar contraseña" />
+                            <p class="help-block text-danger"></p>
+                         
+    
             <label for="rol">Rol:</label>
             <select name="rol" id="rol" required>
                 <option value="estudiante">Estudiante</option>
                 <option value="profesor">Profesor</option>
             </select><br>
 
+            <script>
+                validarContrasena();
+             </script>
+
             <button type="submit" class="boton">Completar Registro</button>
         </form>
     </div>
-
+    
     <div id="pie">
         <!-- Aquí va el texto o información del pie de página -->
     </div>
