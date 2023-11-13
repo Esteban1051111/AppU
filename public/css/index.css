@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#banner {
+    background-image: url('/public/img/Banner\ Ppal.png');    
+    background-size: cover;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    height: auto;
+}
+#banner h1{
+    padding: 30px;
+}
+
+
+#contenido {
+    background-image: url('/public/img/background.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 335px;
+    background-size: cover;    
+}
+#pie {
+    background-image: url('/public/img/background\ footer.jpg');
+    color: white;
+    text-align: center;
+    height: 200px;
+    background-size: cover;
+    
+}
+#pie p {
+    padding: 60px;
+}
+
+
+
+
+/*botones*/
+/* Estilo del botón */
+.boton {
+    display: inline-block;
+    padding: 15px 32px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #008DD2;
+    border: 4px solid #008DD2;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    margin: 20px;
+}
+
+/* Cambios al pasar el ratón sobre el botón */
+.boton:hover {
+    background-color: #1e77a3;
+    color: #fff;
+}
+
+
+
+#banner img {
+    width: auto; /* Ajusta el ancho del logo según tus preferencias */
+    height: auto; /* Hace que la altura se ajuste automáticamente manteniendo la proporción */
+}
+
+
+
+
+

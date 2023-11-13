@@ -10,6 +10,7 @@
   "author": "elizap",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^5.3.2",
     "chalk": "^5.2.0",
     "code": "^5.2.4",
     "cookie-parser": "^1.4.6",

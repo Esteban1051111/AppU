@@ -1,0 +1,72 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#banner {
+    background-image: url('/public/img/Banner\ Ppal.png');    
+    background-size: cover;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    height: auto;
+}
+#banner h1{
+    padding: 30px;
+}
+
+
+#contenido {
+    background-image: url('/public/img/background.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 335px;
+    background-size: cover;    
+}
+#pie {
+    background-image: url('/public/img/background\ footer.jpg');
+    color: white;
+    text-align: center;
+    height: 200px;
+    background-size: cover;
+    
+}
+#pie p {
+    padding: 60px;
+}
+
+
+.login-form {
+    background-color: #ffffff;
+    padding: 50px;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-form input {
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+.login-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.login-form button:hover {
+    background-color: #45a049;
+}
