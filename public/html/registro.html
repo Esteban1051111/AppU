@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <!-- Enlace a Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/public/css/registro.css">
+</head>
+<body>
+    <div id="banner">
+        <h1>Registro usuarios
+        </h1>
+        <img src="/public/img/Logo_claroU.png" alt="Logo">
+    </div>
+    
+    <div class="container-fluid pt-5">
+        <div class="d-flex flex-column text-center mb-5 pt-5">
+            
+            <h2 class="display-4 m-0">Ingresa <span class="text-primary"> datos solicitados</span></h2>
+            <h3>¡Correo electrónico a sido verificado satisfactoriamente!</h3>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-8 mb-5">
+                <div class="contact-form">
+                    <div id="success"></div>
+                    <form name="sentMessage" id="contactForm" novalidate="novalidate" action="/usuarios/crear" method="POST">
+
+                        <div class="control-group">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" class="form-control p-4" id="nombre"  name="nombre" placeholder="Nombre" required="required" data-validation-required-message="Por favor ingresar nombre" />
+                            <p class="help-block text-danger"></p>
+
+                            <label for="nombre">Documento:</label>
+                            <input type="text" class="form-control p-4" id="documento"  name="documento" placeholder="Documento" required="required" data-validation-required-message="Por favor ingresar documento" />
+                            <p class="help-block text-danger"></p>
+
+                            <label for="nombre">Dirección:</label>
+                            <input type="text" class="form-control p-4" id="direccion"  name="direccion" placeholder="Dirección" required="required" data-validation-required-message="Por favor ingresar dirección" />
+                            <p class="help-block text-danger"></p>
+
+
+                            <label for="nombre">Teléfono:</label>
+                            <input type="text" class="form-control p-4" id="telefono"  name="telefono" placeholder="Teléfono" required="required" data-validation-required-message="Por favor ingresaar teléfono" />
+                            <p class="help-block text-danger"></p>
+
+                            
+                            <label for="nombre">Correo:</label>
+                            <input type="text" class="form-control p-4" id="correo"  name="correo" placeholder="Correo" required="required" data-validation-required-message="Por favor ingresar correoelectrónico" />
+                            <p class="help-block text-danger"></p>
+
+                            
+                            <label for="nombre">Usuario</label>
+                            <input type="text" class="form-control p-4" id="usuario"  name="usuario" placeholder="Usuario" required="required" data-validation-required-message="Por favor ingresar usuario" />
+                            <p class="help-block text-danger"></p>
+
+                            
+                            <label for="nombre">Contraseña:</label>
+                            <input type="text" class="form-control p-4" id="contrasena"  name="contrasena" placeholder="Contraseña" required="required" data-validation-required-message="Por favor ingresar contraseña" />
+                            <p class="help-block text-danger"></p>
+
+                            
+                            <label for="nombre">Confirmar Contraseña:</label>
+                            <input type="password" class="form-control p-4" id="confirm_contrasena" name="confirm_contrasena" placeholder="Confirmar Contraseña" required="required" data-validation-required-message="Por favor confirmar contraseña" />
+                            <p class="help-block text-danger"></p>
+                         
+    
+            <label for="rol">Rol:</label>
+            <select name="rol" id="rol" required>
+                <option value="estudiante">Estudiante</option>
+                <option value="profesor">Profesor</option>
+            </select><br>
+
+            <script>
+                validarContrasena();
+             </script>
+
+            <button type="submit" class="boton">Completar Registro</button>
+        </form>
+    </div>
+
+    <div id="pie">
+        <p>Canales físicos y electrónicos para atención al público, Sede Principal Calle 65 No 26 - 10, Manizales Caldas Colombia. 
+            Horario de atención: 7:45 am - 11:45 am y 1:45 pm - 5:45 pm. Viernes: 7:00 am a 3:30 pm 
+            Tel conmutador +57 6 8781500 / Fax 8781501 / Apartado aéreo 275 / Línea gratuita: 01-8000-512120
+            Línea de servicio a la ciudadanía/Usuario/Línea anticorrupción 
+            Email: atencionalciudadano@ucaldas.edu.co 
+            Notificaciones judiciales escribir a: gestion.juridica@ucaldas.edu.co 
+        </p>
+    </div>
+
+    <!-- Enlaces a Bootstrap JS y Popper.js (necesarios para ciertas funcionalidades de Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
